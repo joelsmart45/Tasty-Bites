@@ -1,0 +1,6 @@
+{
+  "name": "Maison Larder — Artisanal Pantry, Chef Provisions & Catering",
+  "description": "Curated culinary collective offering small-batch artisanal pantry goods, ready-to-heat chef provisions, and bespoke private dining catering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

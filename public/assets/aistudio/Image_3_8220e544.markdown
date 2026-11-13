@@ -1,0 +1,222 @@
+---
+name: Warm Epicurean
+colors:
+  surface: '#fcf9f5'
+  surface-dim: '#dcdad6'
+  surface-bright: '#fcf9f5'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f6f3ef'
+  surface-container: '#f0edea'
+  surface-container-high: '#ebe8e4'
+  surface-container-highest: '#e5e2de'
+  on-surface: '#1c1c1a'
+  on-surface-variant: '#56423d'
+  inverse-surface: '#31302e'
+  inverse-on-surface: '#f3f0ed'
+  outline: '#8a726c'
+  outline-variant: '#ddc0b9'
+  surface-tint: '#a13f26'
+  primary: '#7e260f'
+  on-primary: '#ffffff'
+  primary-container: '#9e3d24'
+  on-primary-container: '#ffc9bc'
+  inverse-primary: '#ffb4a2'
+  secondary: '#536347'
+  on-secondary: '#ffffff'
+  secondary-container: '#d3e6c3'
+  on-secondary-container: '#57674b'
+  tertiary: '#613d00'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#805300'
+  on-tertiary-container: '#ffcd8c'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdbd2'
+  primary-fixed-dim: '#ffb4a2'
+  on-primary-fixed: '#3c0800'
+  on-primary-fixed-variant: '#812811'
+  secondary-fixed: '#d6e8c5'
+  secondary-fixed-dim: '#baccaa'
+  on-secondary-fixed: '#111f09'
+  on-secondary-fixed-variant: '#3c4b31'
+  tertiary-fixed: '#ffddb4'
+  tertiary-fixed-dim: '#fabb64'
+  on-tertiary-fixed: '#291800'
+  on-tertiary-fixed-variant: '#633f00'
+  background: '#fcf9f5'
+  on-background: '#1c1c1a'
+  surface-variant: '#e5e2de'
+typography:
+  display:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '600'
+    lineHeight: 64px
+    letterSpacing: -0.02em
+  display-mobile:
+    fontFamily: Playfair Display
+    fontSize: 38px
+    fontWeight: '600'
+    lineHeight: 46px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 40px
+    fontWeight: '500'
+    lineHeight: 48px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 30px
+    fontWeight: '500'
+    lineHeight: 38px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 36px
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 30px
+  title:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.75rem
+  space-xl: 3rem
+---
+
+## Brand & Style
+
+This design system serves a curated culinary collective bridging artisanal pantry goods, ready-to-heat chef provisions, and bespoke catering services. The brand communicates understated luxury, culinary authenticity, and approachable refinement. 
+
+The visual style unites **Warm Modern Minimalism** with **Tactile Editorial Craft**. It avoids cold tech tropes and fussy rustic clichés, adopting instead the ambiance of an architect-designed European gourmet larder: generous open air, unhurried typography, natural linen surfaces, and subtle, physical paper finishes. Every interface interaction feels deliberate, welcoming, and tactile—reassuring clients whether they are securing a quick pantry staple or curating a multi-course private event.
+
+## Colors
+
+The palette is rooted in kitchen materiality—clay cookware, preserved herbs, natural grain, and cast iron. 
+
+- **Primary (`#9E3D24` — Roasted Auburn / Terracotta):** Anchors primary calls to action, brand highlights, active navigation nodes, and purchase triggers.
+- **Secondary (`#4A5A3F` — Warm Olive Sage):** Conveys freshness, organic pantry provenance, seasonal availability tags, and chef curation badges.
+- **Tertiary (`#E4A853` — Buttery Saffron):** Reserved for star ratings, special seasonal notices, awards, and delicate hover flourishes.
+- **Neutral (`#1E1E1C` — Espresso Charcoal):** Grounded ink tone ensuring high-contrast, effortless legibility for long-form culinary descriptions and ingredient lists.
+- **Canvas & Containers:** Base backgrounds utilize a dual-tone warm foundation. Page canvas rests on Linen `#FBF9F5`, transitioning to `#F3EFEA` for card surfaces, drawer panels, and structural alternating bands.
+- **Subtle Linework (`#E5DFD7`):** Defines clean, muted hairline dividers and quiet card boundaries without visual clutter.
+
+## Typography
+
+The typographic hierarchy pairs the editorial grace of **Playfair Display** with the clean, approachable legibility of **Plus Jakarta Sans**. 
+
+- **Editorial Headings:** Playfair Display introduces rhythm and poise to recipe narratives, meal categories, and brand introductions. It features tighter negative letter spacing at display scales to maintain cohesion.
+- **Functional Interface & Body:** Plus Jakarta Sans ensures crisp legibility for ingredient specs, allergen sheets, weight metrics, pricing, and checkout actions.
+- **Labels & Microcopy:** Category tags, dietary chips, and preparation timestamps use uppercase tracking (`0.04em` to `0.06em`) to anchor technical details within lush culinary imagery.
+
+## Layout & Spacing
+
+The layout philosophy centers on a responsive 12-column grid designed with an editorial magazine sensibility. Content avoids edge-to-edge clutter, relying on generous horizontal borders and clear breathing room.
+
+- **Desktop (1200px+):** 12 columns with `1.5rem` (24px) gutters and a controlled container max-width of `1360px`, framed by `3rem` canvas margins.
+- **Tablet (768px – 1199px):** 8 columns with `1.25rem` (20px) gutters and `2rem` page margins. Cards collapse into two-column pairings; category navigations switch to horizontal scroll trays.
+- **Mobile (< 768px):** 4 columns with `1rem` (16px) gutters and `1.25rem` (20px) side margins. Menus transform to sliding full-bleed overlays, and multi-tier pantry filters collapse into an off-canvas drawer.
+- **Vertical Rhythm:** Generous inter-section buffers (`space-xl` scaled dynamically up to `5rem` for hero and feature transitions) allow photography of artisan meals and pantry goods to stand proud.
+
+## Elevation & Depth
+
+Visual hierarchy eschews synthetic high-blur dropshadows, relying instead on **tactile tonal layering** and **fine hairline framing**:
+
+- **Ground (Canvas):** `#FBF9F5` serves as the warm foundation.
+- **Surface Elevation 1 (Interactive Cards & Lists):** Pure `#F3EFEA` backed by an ultra-subtle tinted perimeter border: `1px solid #E5DFD7`. 
+- **Surface Elevation 2 (Floating Modals, Cart Drawers, Dropdowns):** Solid `#FBF9F5` elevated with a warm, diffuse ambient shadow tinted with espresso charcoal: `0 12px 32px -4px rgba(30, 30, 28, 0.08), 0 4px 12px -2px rgba(30, 30, 28, 0.04)`.
+- **Card Hover Response:** Interactive items do not lift abruptly; they deepen via subtle hairline shift (`#D1C7BC`) and an organic warm shadow transition: `0 8px 24px -2px rgba(158, 61, 36, 0.07)`.
+
+## Shapes
+
+The design system employs **Rounded (Level 2)** geometry, balancing culinary warmth with contemporary architectural order:
+
+- **Base Elements:** Buttons, text fields, badges, and small controls use `0.5rem` (8px).
+- **Cards, Meal Tiles, and Drawers:** Feature `1rem` (16px) corner radiuses (`rounded-lg`), producing soft organic silhouettes that complement food photography.
+- **Hero Banners & Feature Panels:** Utilize `1.5rem` (24px) corner rounding (`rounded-xl`) to feel like welcoming framed platters.
+- **Pill Accents:** Specific micro-components such as dietary pills (`Gluten-Free`, `Organic`) and counter badges leverage full rounded pill capsules.
+
+## Components
+
+### Buttons
+- **Primary:** Filled `#9E3D24` with `#FBF9F5` text, 0.5rem border radius, medium font weight (`Plus Jakarta Sans`), with padding `0.875rem 1.75rem`. Hover shifts to a deep auburn `#85321D`.
+- **Secondary (Editorial Outline):** Transparent background, `1.5px solid #4A5A3F`, text in `#4A5A3F`. Hover fills with subtle tint `rgba(74, 90, 63, 0.08)`.
+- **Tertiary / Subtle:** Transparent background, underlined text in `#1E1E1C` with an animated hover line in `#9E3D24`.
+
+### Chips & Dietary Badges
+- Compact capsules (`padding: 0.375rem 0.875rem`, border-radius: full).
+- **Dietary (Vegan, Nut-Free):** `#F3EFEA` background, `1px solid #E5DFD7`, text `#4A5A3F` in `label-sm`.
+- **Selected Filters:** Filled `#4A5A3F` with clean white text.
+
+### Product & Meal Cards
+- Background `#F3EFEA`, border `1px solid #E5DFD7`, radius `1rem`.
+- Imagery is framed with an internal inset ratio of 4:3 or 1:1, soft corners (`0.75rem`), and subtle warm tone grading.
+- Content zone separates title (`Playfair Display`), concise serving details, dietary icons, and an actionable "+ Add to Cart" or "Configure Order" trigger.
+
+### Form Inputs & Date Selectors (Catering & Ordering)
+- Background `#FBF9F5`, border `1.5px solid #E5DFD7`, padding `0.75rem 1rem`, text `#1E1E1C`.
+- Focus state activates a clean `#9E3D24` ring (`1.5px`) with zero harsh offsets.
+- Date and time pickers for meal prep delivery feature distinct calendar tiles styled in olive and linen.
+
+### Lists & Ingredient Breakdowns
+- Alternating subtle rows or clean separated lines bordered by `#E5DFD7`.
+- Primary item titles sit in `body-md` bold, with weight/origin subtext in `body-sm` muted charcoal (`#63615C`).
+
+### Checkboxes & Radio Buttons
+- Custom 20px inputs with 4px corner radius (checkboxes) or full circle (radios).
+- Default: `1.5px solid #D1C7BC` on `#FBF9F5`.
+- Checked: Solid `#9E3D24` with crisp white SVG checkmarks or inner dot.
+
+### Specialized Catering Inquirer & Portion Steppers
+- **Portion Steppers:** Rounded pill container with `#E5DFD7` border, containing `-` and `+` action icons surrounding an espresso charcoal count.
+- **Catering Tier Cards:** Distinctive three-tier pricing cards showcasing curated banquet menus with editorial script flourishes, subtle gold star icons (`#E4A853`), and dedicated inquiry triggers.
