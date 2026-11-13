@@ -130,7 +130,7 @@ export function Navbar({
 
           <div className="pt-6 border-t border-[#E5DFD7] space-y-4">
             <p className="text-[13px] text-[#56423D] leading-relaxed">
-              42 Rue des Martyrs · Kitchen &amp; Larder Counter open Tuesday through Sunday, 10:00–19:00.
+              12 Eziobodo · Kitchen &amp; Larder Counter open Tuesday through Sunday, 10:00–19:00.
             </p>
             <button
               type="button"

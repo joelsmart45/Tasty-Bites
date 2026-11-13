@@ -165,7 +165,7 @@ export default function App() {
               Maison Larder
             </button>
             <p className="text-[14px] text-[#56423D] leading-relaxed max-w-xs">
-              42 Rue des Martyrs · Kitchen &amp; Pantry Counter open Tuesday–Sunday, 10:00–19:00.
+              12 Eziobodo · Kitchen &amp; Pantry Counter open Tuesday–Sunday, 10:00–19:00.
             </p>
           </div>
 

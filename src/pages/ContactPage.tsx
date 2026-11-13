@@ -65,7 +65,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           <div className="lg:col-span-5 space-y-8">
             <div className="p-6 sm:p-7 rounded-2xl bg-[#F3EFEA] border border-[#E5DFD7] space-y-5">
               <h2 className="font-editorial text-2xl font-medium text-[#1E1E1C]">
-                Rue des Martyrs Larder
+                12 Eziobodo Larder
               </h2>
 
               <ul className="space-y-4 text-[14px] text-[#56423D]">
@@ -73,7 +73,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
                   <MapPin className="w-4 h-4 text-[#9E3D24] mt-1 shrink-0" />
                   <div>
                     <p className="font-semibold text-[#1E1E1C]">Address</p>
-                    <p>42 Rue des Martyrs, Courtyard Studio B</p>
+                    <p>12 Eziobodo</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">

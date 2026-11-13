@@ -76,7 +76,7 @@ export function CatalogPage({
           kicker: 'Ready-to-Heat Chef Provisions',
           title: 'Kitchen suppers & bronze-die pastas',
           description:
-            'Prepared fresh every Thursday and Friday in our Rue des Martyrs kitchen. Packed chilled in glass and terracotta for effortless 15-minute finishing at home.',
+            'Prepared fresh every Thursday and Friday in our 12 Eziobodo kitchen. Packed chilled in glass and terracotta for effortless 15-minute finishing at home.',
           otherLabel: 'Browse Shelf-Stable Pantry →',
           otherRoute: { page: 'pantry' } as AppRoute,
         }

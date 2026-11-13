@@ -329,7 +329,7 @@ export const DELIVERY_ZONES: DeliveryZoneInfo[] = [
     cutoff: 'Order by Wednesday 20:00',
   },
   {
-    zone: '42 Rue des Martyrs Larder Counter Pickup',
+    zone: '12 Eziobodo Larder Counter Pickup',
     schedule: 'Tuesday – Sunday · 10:00 – 19:00',
     cutoff: 'Same-day pickup available before 14:00',
   },
