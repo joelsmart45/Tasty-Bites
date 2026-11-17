@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import type { AppRoute } from '../types/routes';
+import { useAuth } from '../context/AuthContext';
 
 interface NavbarProps {
   currentRoute: AppRoute;
@@ -22,6 +23,7 @@ export function Navbar({
   cartCount,
   onOpenCart,
 }: NavbarProps) {
+  const { user, logout, isAuthenticated, hasRole } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -71,7 +73,7 @@ export function Navbar({
           })}
         </nav>
 
-        {/* Zone 3: Single primary action (+ mobile menu drawer toggle) */}
+        {/* Zone 3: Primary action + auth (+ mobile menu drawer toggle) */}
         <div className="flex items-center gap-2 shrink-0">
           <button
             type="button"
@@ -87,6 +89,35 @@ export function Navbar({
               </span>
             )}
           </button>
+
+          {!isAuthenticated ? (
+            <button
+              type="button"
+              onClick={() => onNavigate({ page: 'login' })}
+              className="hidden md:inline-flex items-center justify-center gap-2 min-h-[40px] px-4 py-2 rounded-lg border border-[#E5DFD7] bg-[#F3EFEA] text-[#1E1E1C] text-[13px] font-semibold hover:bg-[#F3EFEA]/80 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9E3D24]"
+            >
+              Sign in
+            </button>
+          ) : (
+            <>
+              {hasRole('admin') && (
+                <button
+                  type="button"
+                  onClick={() => onNavigate({ page: 'admin' })}
+                  className="hidden md:inline-flex items-center justify-center gap-2 min-h-[40px] px-4 py-2 rounded-lg border border-[#E5DFD7] bg-[#F3EFEA] text-[#1E1E1C] text-[13px] font-semibold hover:bg-[#F3EFEA]/80 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9E3D24]"
+                >
+                  Admin
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={logout}
+                className="hidden md:inline-flex items-center justify-center gap-2 min-h-[40px] px-4 py-2 rounded-lg border border-[#E5DFD7] bg-[#F3EFEA] text-[#1E1E1C] text-[13px] font-semibold hover:bg-[#FBECEA] hover:text-[#BA1A1A] hover:border-[#E2B8B0] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9E3D24]"
+              >
+                Sign out
+              </button>
+            </>
+          )}
 
           <button
             type="button"
@@ -126,6 +157,45 @@ export function Navbar({
                 </button>
               );
             })}
+            {!isAuthenticated && (
+              <button
+                type="button"
+                onClick={() => {
+                  handleLinkClick({ page: 'login' });
+                  setMobileMenuOpen(false);
+                }}
+                className="py-4 font-editorial text-2xl font-medium transition-colors min-h-[44px] flex items-center justify-between text-left cursor-pointer text-[#1E1E1C] hover:text-[#9E3D24]"
+              >
+                <span>Sign in</span>
+                <span className="text-sm font-sans text-[#63615C]">→</span>
+              </button>
+            )}
+            {isAuthenticated && hasRole('admin') && (
+              <button
+                type="button"
+                onClick={() => {
+                  handleLinkClick({ page: 'admin' });
+                  setMobileMenuOpen(false);
+                }}
+                className="py-4 font-editorial text-2xl font-medium transition-colors min-h-[44px] flex items-center justify-between text-left cursor-pointer text-[#1E1E1C] hover:text-[#9E3D24]"
+              >
+                <span>Admin</span>
+                <span className="text-sm font-sans text-[#63615C]">→</span>
+              </button>
+            )}
+            {isAuthenticated && (
+              <button
+                type="button"
+                onClick={() => {
+                  logout();
+                  setMobileMenuOpen(false);
+                }}
+                className="py-4 font-editorial text-2xl font-medium transition-colors min-h-[44px] flex items-center justify-between text-left cursor-pointer text-[#BA1A1A]"
+              >
+                <span>Sign out</span>
+                <span className="text-sm font-sans text-[#63615C]">→</span>
+              </button>
+            )}
           </nav>
 
           <div className="pt-6 border-t border-[#E5DFD7] space-y-4">

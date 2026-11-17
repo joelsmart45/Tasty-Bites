@@ -5,7 +5,9 @@ export type AppRoute =
   | { page: 'product'; productId: string }
   | { page: 'catering' }
   | { page: 'provenance' }
-  | { page: 'contact' };
+  | { page: 'contact' }
+  | { page: 'login' }
+  | { page: 'admin' };
 
 export function parseHashToRoute(hash: string): AppRoute {
   const cleaned = hash.replace(/^#\/?/, '').trim();
@@ -15,6 +17,8 @@ export function parseHashToRoute(hash: string): AppRoute {
   if (cleaned === 'catering') return { page: 'catering' };
   if (cleaned === 'provenance') return { page: 'provenance' };
   if (cleaned === 'contact') return { page: 'contact' };
+  if (cleaned === 'login') return { page: 'login' };
+  if (cleaned === 'admin') return { page: 'admin' };
   if (cleaned.startsWith('product/')) {
     const productId = cleaned.slice('product/'.length).trim();
     if (productId) return { page: 'product', productId };
@@ -38,5 +42,9 @@ export function routeToHash(route: AppRoute): string {
       return '#/provenance';
     case 'contact':
       return '#/contact';
+    case 'login':
+      return '#/login';
+    case 'admin':
+      return '#/admin';
   }
 }

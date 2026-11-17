@@ -11,6 +11,9 @@ import {
   routeToHash,
   type AppRoute,
 } from './types/routes';
+import { AuthProvider } from './context/AuthContext';
+import { LoginPage } from './pages/LoginPage';
+import { AdminPage } from './pages/AdminPage';
 import { Navbar } from './components/Navbar';
 import { CartDrawer, type CartItem } from './components/CartDrawer';
 import { HomePage } from './pages/HomePage';
@@ -139,11 +142,16 @@ export default function App() {
         return <ProvenancePage onNavigate={navigate} />;
       case 'contact':
         return <ContactPage onNavigate={navigate} />;
+      case 'login':
+        return <LoginPage onNavigate={navigate} />;
+      case 'admin':
+        return <AdminPage />;
     }
   };
 
   return (
-    <div id="top" className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1E1E1C]">
+    <AuthProvider>
+      <div id="top" className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1E1E1C]">
       <Navbar
         currentRoute={route}
         onNavigate={navigate}
@@ -304,7 +312,8 @@ export default function App() {
         onRemoveItem={handleRemoveItem}
         onClearCart={() => setCart([])}
       />
-    </div>
+      </div>
+    </AuthProvider>
   );
 }
 
